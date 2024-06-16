@@ -1,0 +1,8 @@
+<h1>From Second Page</h1>
+<input type="button" [disabled]="isDisable" value="Click Me" (click)="onButtonClick()" >
+<div>
+    @for (profile of profiles; track profile.name) {
+        <h3>Name: {{profile.name}} Age: {{profile.age}} Marital Status: {{profile.isMarried == true ? "Yes" : "No"}}</h3>
+    }
+</div>
+
