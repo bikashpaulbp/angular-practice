@@ -7,4 +7,16 @@ import { SecondPageComponent } from './second-page/second-page.component';
 })
 export class AppComponent {
   name = '';
+  userName = '';
+  profiles = [
+    { name: 'Mahesh', age: 20, isMarried: false },
+    { name: 'Ganesh', age: 40, isMarried: true },
+    { name: 'Topesh', age: 18, isMarried: false },
+    { name: 'Rakesh', age: 35, isMarried: true },
+  ];
+
+  recieveName(e) {
+    this.userName = e;
+   
+  }
 }

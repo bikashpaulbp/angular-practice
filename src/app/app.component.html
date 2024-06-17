@@ -1,7 +1,9 @@
 <h1>Hello World!</h1>
 
+<h1 appBgColor >Name from second page: {{userName}}</h1>
+
 <input type="text" [(ngModel)] = "name">
 
 <p>{{name}}</p>
 
-<app-second-page> </app-second-page>
+<app-second-page [profiles] = "profiles" (sendNameEvent)="recieveName($event)"> </app-second-page>
