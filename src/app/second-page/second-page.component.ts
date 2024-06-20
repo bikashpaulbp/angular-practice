@@ -4,10 +4,10 @@ import {
   ElementRef,
   EventEmitter,
   Input,
-  input,
+  
   Output,
   ViewChild,
-  viewChild,
+  
 } from '@angular/core';
 
 @Component({
